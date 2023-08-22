@@ -1,3 +1,5 @@
+{{ config(materialized='table', alias='employees') }}
+
 WITH e AS (
   SELECT
     employee_id,
@@ -8,13 +10,17 @@ WITH e AS (
     hire_date,
     department_id,
     salary
-  FROM  `databasesuperstore.superstore.employees`
+  FROM  
+    --`databasesuperstore.superstore.employees`
+    {{source ('superstore','employees')}}
 ),
 d AS (
   SELECT
   department_id,
   department_name
-  FROM `databasesuperstore.superstore.departments`
+  FROM 
+    --`databasesuperstore.superstore.departments`
+    {{source ('superstore','departments')}}
 )
 
 SELECT
