@@ -1,3 +1,5 @@
+{{ config(materialized='table', alias='employees') }}
+
 WITH e AS (
   SELECT
     employee_id,
