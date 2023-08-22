@@ -3,19 +3,8 @@ version: 2
 
 models:
     - name: employees
-      description: 'A sample data employees'
-      # columns:
-      #     - name: id
-      #       description: "The primary key for this table"
-      #       tests:
-      #           - unique
-      #           - not_null
-
+      description: A sample data employees
     - name: transactions
-      description: 'A sample data transactions'
-      # columns:
-      #     - name: id
-      #       description: "The primary key for this table"
-      #       tests:
-      #           - unique
-      #           - not_null
+      description: A sample data transactions  
+
+        
