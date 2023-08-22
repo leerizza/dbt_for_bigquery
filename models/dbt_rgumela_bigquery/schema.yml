@@ -3,7 +3,7 @@ version: 2
 
 models:
     - name: employees
-      description: "A sample data employees"
+      description: A sample data employees
       # columns:
       #     - name: id
       #       description: "The primary key for this table"
@@ -12,7 +12,7 @@ models:
       #           - not_null
 
     - name: transactions
-      description: "A sample data transactions"
+      description: A sample data transactions
       # columns:
       #     - name: id
       #       description: "The primary key for this table"
